@@ -7,16 +7,30 @@
  */
 
 namespace bootphp {
-    function printline()
-    {
-        echo "print line";
-    }
 
-    class functions
+    class fn
     {
-        static function printline()
+        static function println()
         {
-            echo "print line";
+            foreach (func_get_args() as $ar) {
+                echo "\n" . $ar;
+            }
+        }
+
+        static function printjs($str)
+        {
+            echo "\n/*  ";
+            foreach (func_get_args() as $ar) {
+                echo "\n * " . $ar;
+            }
+            echo "\n */";
+        }
+
+        static function printbr($str)
+        {
+            $args = func_get_args();
+            call_user_func_array('printf', $args);
+            print "<br/>";
         }
     }
 }
