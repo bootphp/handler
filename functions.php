@@ -6,17 +6,18 @@
  * Time: 3:40 AM
  */
 
-namespace bootphp;
-
-function printline()
-{
-    echo "print line";
-}
-
-class functions
-{
-    static function printline()
+namespace bootphp {
+    function printline()
     {
         echo "print line";
     }
+
+    class functions
+    {
+        static function printline()
+        {
+            echo "print line";
+        }
+    }
 }
+

@@ -10,9 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "bootphp\\": ""
-        },
+        "files": ["functions.php"],
         "psr-4": {
             "bootphp\\loader\\": ""
         }
