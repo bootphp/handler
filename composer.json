@@ -10,11 +10,11 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "bootphp\\": ""
-        },
         "psr-0": {
             "bootphp\\": ""
+        },
+        "psr-4": {
+            "bootphp\\loader\\": ""
         }
     },
     "require": {}
