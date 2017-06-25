@@ -11,9 +11,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "bootphp\\": "",
             "bootphp\\loader\\": ""
         }
     },
-    "require": {}
+    "require": {
+        "bootphp/loader" : "dev-master"
+    }
 }

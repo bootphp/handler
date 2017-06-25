@@ -32,6 +32,7 @@ namespace bootphp {
             call_user_func_array('printf', $args);
             print "<br/>";
         }
+
     }
 }
 
