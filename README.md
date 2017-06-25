@@ -12,7 +12,7 @@ namespace app {
 
     include_once "lib/autoload.php";
 
-    class Index extends AppLoader
+    class Index extends Loader
     {
         public $title = "DEFAULT_TITLE";
 
