@@ -15,6 +15,6 @@
         }
     },
     "require": {
-        "bootphp/loader" : "dev-master"
+        "bootphp/functions" : "dev-master"
     }
 }
