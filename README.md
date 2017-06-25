@@ -18,15 +18,14 @@ namespace app {
 
         public function __construct()
         {
-            $ctr = new \app\controller\BasicController();
-            // TODO: Something you want to before I do something.
+            // TODO: Something you want to do before I do something.
             fn::println("__construct");
             fn::println("Title in query is " . $this->title);
             fn::println("Title2 in query is " . $this->title2);
             fn::println("Title3 in query is " . $this->title3);
         }
 
-        public function invoke()
+        public function invoke($options)
         {
             // TODO: What you want to do?.
             // You can access all Query params here as instance properties like : $this->title
@@ -37,8 +36,9 @@ namespace app {
         }
 
         public function __destruct()
-        {
-            // TODO: Something you want to do i say goodbye.
+        {   
+            // Now evrything is done.
+            // TODO: Something you want to do before i say goodbye.
         }
 
     }

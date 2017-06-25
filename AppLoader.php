@@ -12,12 +12,13 @@ namespace bootphp\loader {
     {
         private static $__SCANNED__PARAMS__ = false;
 
-        public abstract function invoke();
+        public abstract function invoke($options);
 
         public function __get($name)
         {
-            if (isset($_GET[$name])) {
-                return $_GET[$name];
+            if (isset($_REQUEST[$name])) {
+                $this->{$name} = $_REQUEST[$name];
+                return $this->{$name};
             }
             return null;
         }
@@ -36,16 +37,16 @@ namespace bootphp\loader {
             return false;
         }
 
-        public function execute()
+        public function execute($options=null)
         {
             $this->_populate_params_();
-            $this->invoke();
+            $this->invoke($options);
         }
 
 
-        public function __invoke()
+        public function __invoke($options=null)
         {
-            return $this->execute();
+            return $this->execute($options);
         }
     }
 
