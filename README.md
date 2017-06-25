@@ -7,7 +7,7 @@ Now Entry point of your application would look something like this
 ```php
 namespace app {
 
-    use \bootphp\loader\AppLoader;
+    use \bootphp\loader\Loader;
     use \bootphp\fn;
 
     include_once "lib/autoload.php";

@@ -8,7 +8,7 @@
 
 namespace bootphp\loader {
 
-    abstract class AppLoader
+    abstract class Loader
     {
         private static $__SCANNED__PARAMS__ = false;
 
